@@ -21,11 +21,11 @@ jobs:
         run: make train
       - name: Evaluation
         env:
-          REPO_TOKEN: ${{ secrects.GITHUB_TOKEN }}
+          REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: make eval
       - name: Update Branch
         env:
-          NAME: ${{ secrects.USER_NAME }}
-          EMAIL: ${{ secrects.USER_EMAIL }}
+          NAME: ${{ secrets.USER_NAME }}
+          EMAIL: ${{ secrets.USER_EMAIL }}
         run: make update-branch USER_NAME=$NAME USER_EMAIL=$EMAIL
 
