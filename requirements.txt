@@ -1,1 +1,2 @@
 # used to set up the environment while running the CI workflow jobs
+black
