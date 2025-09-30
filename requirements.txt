@@ -1,2 +1,7 @@
 # used to set up the environment while running the CI workflow jobs
 black
+pandas
+scikit-learn
+matplotlib
+scikit-plot
+skops
