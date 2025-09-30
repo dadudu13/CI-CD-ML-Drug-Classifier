@@ -1,9 +1,9 @@
 install:
-	pip install --upgrade pip &&\
-	pip install -r requirements.txt
+	pip -m install --upgrade pip &&\
+	pip -m install -r requirements.txt
 
 format:
-	black *.py
+	python -m black *.py
 
 train:
 	python train.py
